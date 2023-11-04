@@ -21,10 +21,13 @@ function Header() {
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
+  
 
   return (
     <Headroom>
+    
       <header className={isDark ? "dark-menu header" : "header"}>
+      
         <a href="/" className="logo">
           <span className="grey-color"> &lt;</span>
           <span className="logo-name">{greeting.username}</span>
@@ -79,6 +82,7 @@ function Header() {
             </a>
           </li>
         </ul>
+        
       </header>
     </Headroom>
   );
