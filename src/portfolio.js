@@ -43,20 +43,16 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
-  skills: [
-    emoji("⚡ Proficient in HTML, CSS, JavaScript, and popular frameworks."),
-    emoji(
-      "⚡ Proficient in MongoDB, Express, React, and Node.js, delivering full-stack web solutions"
-    ),
-    emoji(
-      "⚡ Expertise in seamlessly integrating RESTful APIs for dynamic data-driven web applications"
-    ),
-    emoji(
-      "⚡ Craft pixel-perfect, responsive, and user-centric interfaces with modern design principles"
-    )
-  ],
+  title: "What I Do",
+subTitle: "FULL STACK DEVELOPER WITH CLOUD & AI EXPERTISE, BUILDING SCALABLE SOLUTIONS",
+skills: [
+  emoji("⚡ Skilled in Java, Python, C++, and JavaScript with frameworks like NextJS, Flask, Node.js, and React."),
+  emoji("⚡ Experienced in Firebase and AWS (EC2, S3, Lambda, CloudWatch) for secure, scalable cloud deployments."),
+  emoji("⚡ Expertise in building intelligent applications with BERT, NLTK, and Scikit-learn, boosting accuracy and automation."),
+  emoji("⚡ Strong in designing resilient architectures and APIs, improving system reliability and reducing downtime risk."),
+  emoji("⚡ Passionate about crafting user-friendly, responsive interfaces and delivering measurable business impact.")
+],
+
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -174,19 +170,32 @@ const educationInfo = {
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "74%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "89%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "46%"
-    }
-  ],
+  {
+    Stack: "Frontend (NextJS/React/UI)",
+    progressPercentage: "85%" // PillBox: NextJS frontend; strong UI focus
+  },
+  {
+    Stack: "Backend (Node.js/Flask/APIs)",
+    progressPercentage: "80%" // Backend for PillBox & FAQ-ChatBot with Flask/Node
+  },
+  {
+    Stack: "Cloud & DevOps (AWS/Firebase)",
+    progressPercentage: "78%" // AWS EC2/S3/Lambda/CloudWatch + Firebase auth/RTDB
+  },
+  {
+    Stack: "AI/ML (BERT, NLTK, scikit-learn)",
+    progressPercentage: "70%" // FAQ-ChatBot: BERT, TF-IDF, NLTK; model integration
+  },
+  {
+    Stack: "Systems & Networking (HA/Proxmox/HAProxy)",
+    progressPercentage: "65%" // Datawise: HA design, dual-ISP failover, ZFS repl.
+  },
+  {
+    Stack: "Programming (Java • Python • C++ • JS)",
+    progressPercentage: "85%" // Core languages used across projects/internships
+  }
+],
+
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 

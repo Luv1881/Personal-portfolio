@@ -20,17 +20,35 @@ const ViewCounter = () => {
   }, []);
 
   useEffect(() => {
-    const incrementViewCount = async () => {
-      try {
-        const response = await fetch("/api/views", {method: "POST"});
-        const data = await response.json();
+    const apiBase =
+      process.env.REACT_APP_VIEWS_API ||
+      (process.env.NODE_ENV === "development" ? "http://localhost:3001" : "");
+
+    const fetchViews = async method => {
+      const response = await fetch(`${apiBase}/api/views`, {method});
+      if (!response.ok) {
+        throw new Error(`Unexpected status ${response.status}`);
+      }
+      const data = await response.json();
+      if (typeof data.views === "number") {
         setViewCount(data.views);
-      } catch (error) {
-        console.error("Failed to increment view count:", error);
       }
     };
 
-    incrementViewCount();
+    const init = async () => {
+      try {
+        await fetchViews("POST");
+      } catch (error) {
+        console.error("Failed to increment view count:", error);
+        try {
+          await fetchViews("GET");
+        } catch (fallbackError) {
+          console.error("Failed to fetch existing view count:", fallbackError);
+        }
+      }
+    };
+
+    init();
   }, []);
 
   if (!showButton) {
