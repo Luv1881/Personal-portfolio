@@ -1,0 +1,25 @@
+.view-counter-container {
+  position: fixed;
+  bottom: 20px;
+  right: 100px;
+  z-index: 1000;
+}
+
+.view-counter-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: width 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.view-counter-container.expanded .view-counter-button {
+  width: 150px;
+}

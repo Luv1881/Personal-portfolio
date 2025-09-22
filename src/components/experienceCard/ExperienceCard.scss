@@ -2,7 +2,7 @@
 
 .experience-card {
   position: relative;
-  background-color: $lightBackground2;
+  background-color: $darkBackground;
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
@@ -85,10 +85,10 @@
   top: 7rem;
   margin-left: auto;
   margin-right: auto;
-  width: 8rem;
+  width: 20rem;
   height: 8rem;
   box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
-  border-radius: 50%;
+  border-radius: 10px;
 }
 
 .experience-text-role {

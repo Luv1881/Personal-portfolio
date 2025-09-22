@@ -102,18 +102,18 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
     },
-    // {
-    //   skillName: "sql-database",
-    //   fontAwesomeClassname: "fas fa-database"
-    // },
-    // {
-    //   skillName: "aws",
-    //   fontAwesomeClassname: "fab fa-aws"
-    // },
-    // {
-    //   skillName: "firebase",
-    //   fontAwesomeClassname: "fas fa-fire"
-    // },
+    {
+      skillName: "sql-database",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "aws",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "firebase",
+      fontAwesomeClassname: "fas fa-fire"
+    },
     {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
@@ -142,8 +142,8 @@ const educationInfo = {
       schoolName: "VIT University",
       logo: require("./assets/images/vellore-institute-of-technology-vit-logo.png"),
       subHeader: "Bachelor of Technology in Computer Science",
-      duration: "September 2022-",
-      // desc: "Participated in Hackbattle.",
+      duration: "September 2022-May 2026",
+      desc: "CGPA : 9.03",
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -179,11 +179,11 @@ const techStack = {
     },
     {
       Stack: "Backend",
-      progressPercentage: "58%"
+      progressPercentage: "89%"
     },
     {
       Stack: "Programming",
-      progressPercentage: "35%"
+      progressPercentage: "46%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -192,34 +192,38 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  // display: true, //Set it to true to show workExperiences Section
-  // experience: [
-  //   {
-  //     role: "Software Engineer",
-  //     company: "Facebook",
-  //     companylogo: require("./assets/images/facebookLogo.png"),
-  //     date: "June 2018 – Present",
-  //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  //     descBullets: [
-  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-  //     ]
-  //   },
-  //   {
-  //     role: "Front-End Developer",
-  //     company: "Quora",
-  //     companylogo: require("./assets/images/quoraLogo.png"),
-  //     date: "May 2017 – May 2018",
-  //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  //   },
-  //   {
-  //     role: "Software Engineer Intern",
-  //     company: "Airbnb",
-  //     companylogo: require("./assets/images/airbnbLogo.png"),
-  //     date: "Jan 2015 – Sep 2015",
-  //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  //   }
-  // ]
+  display: true, //Set it to true to show workExperiences Section
+  experience: [
+    {
+      role: "Intern",
+      company: "DataWise",
+      companylogo: require("./assets/images/datawise.png"),
+      date: "May 2025 – July 2025",
+      desc: "Worked on building high availability network architecture at DataWise",
+      descBullets: [
+        "Designed and proposed a high-availability, fault-tolerant network architecture, reducing downtime risk by 40%.",
+"Researched and evaluated 10+ enterprise-grade routers, firewalls, and redundancy protocols to identify scalable, cost-effective solutions.",
+"Delivered a production-ready architecture integrating HAProxy, Proxmox clusters, ZFS replication, and dual-ISP failover.",
+
+"Enhanced infrastructure performance, security, and reliability for future production deployment."
+      ]
+    },
+    {
+      role: "AWS System Operations Intern",
+      company: "Tech Mahindra",
+      companylogo: require("./assets/images/techmahindra.png"),
+      date: "May 2024-July 2024",
+      desc: "Worked as an AWS System Operations Intern at Tech Mahindra.",
+      descBullets: [
+        "Optimized AWS resources (EC2, S3, Lambda), improving performance and reducing costs by 15%.",
+
+"Automated 10+ cloud operations using AWS CLI, reducing manual workload and deployment time by 30%.",
+
+"Built and maintained CloudWatch dashboards and alerts across services, cutting incident response time.",
+"Improved system monitoring and diagnostics with proactive alerts and automated remediation."
+      ]
+    }    
+  ]
 };
 
 /* Your Open Source Section to View Your Github Pinned Projects
@@ -239,11 +243,23 @@ const bigProjects = {
     {
       image: require("./assets/images/logo-white.png"),
       projectName: "PillBox",
-      projectDesc: "A personal medication tracker that I made with my friends Aman, Ayush and Adheesh for Hackbattle Hackathon",
+      projectDesc: "Built PillBox, a medication delivery system for the elderly, boosting accessibility by 30% with a NextJS frontend and Firebase-powered real-time data, authentication, and cloud storage.",
       footerLink: [
         {
           name: "Visit Github",
           url: "https://github.com/RayGL1TCH/PillBox"
+        }
+        //  you can add extra buttons here.
+      ]
+    } ,
+    {
+      image: require("./assets/images/faqchatbot1.png"),
+      projectName: "FAQ Chatbot",
+      projectDesc: "Intelligent FAQ system using BERT, TF-IDF, and NLTK, improving answer accuracy by 40% with sentiment analysis, contextual matching, and automated user interaction.",
+      footerLink: [
+        {
+          name: "Visit Github",
+          url: "https://github.com/Luv1881/FAQ-ChatBot"
         }
         //  you can add extra buttons here.
       ]
@@ -267,69 +283,69 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "ASome Certifications that I have received",
+  // title: emoji("Achievements And Certifications 🏆 "),
+  // subtitle:
+  //   "ASome Certifications that I have received",
 
-  achievementsCards: [
-    {
-      title: "The Complete 2023 Web Development Bootcamp",
-      subtitle:
-      "I successfully completed The Complete 2023 Web Development Bootcamp by Angela Yu, which equipped me with essential web development skills and knowledge for a promising career in the field.",
-      image: require("./assets/images/Udemy_logo.svg.png"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://www.udemy.com/certificate/UC-29415bd1-adc0-434b-b9b3-b6b620755f89/"
-        },
-        // {
-        //   name: "Award Letter",
-        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        // },
-        // {
-        //   name: "Google Code-in Blog",
-        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        // }
-      ]
-    },
-    {
-      title: "Hackbattle Hackathon",
-      subtitle:
-        "Developed PillBox for Hackbattle Hackathon",
-      image: require("./assets/images/logo-white.png"),
-      imageAlt: "Pillbox",
-      footerLink: [
-        // {
-        //   name: "Certification",
-        //   url: "https://www.udemy.com/certificate/UC-29415bd1-adc0-434b-b9b3-b6b620755f89/"
-        // },
-        {
-          name: "Participation Certificate",
-          url: "https://drive.google.com/file/d/1h7V-ZoUkYGmjuw8rke-BMXOrLaXuuZQp/view?usp=sharing"
-        },
-        // {
-        //   name: "Google Code-in Blog",
-        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        // }
-      ]
-    },
+  // achievementsCards: [
+  //   {
+  //     title: "The Complete 2023 Web Development Bootcamp",
+  //     subtitle:
+  //     "I successfully completed The Complete 2023 Web Development Bootcamp by Angela Yu, which equipped me with essential web development skills and knowledge for a promising career in the field.",
+  //     image: require("./assets/images/Udemy_logo.svg.png"),
+  //     imageAlt: "Google Code-In Logo",
+  //     footerLink: [
+  //       {
+  //         name: "Certification",
+  //         url: "https://www.udemy.com/certificate/UC-29415bd1-adc0-434b-b9b3-b6b620755f89/"
+  //       },
+  //       // {
+  //       //   name: "Award Letter",
+  //       //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+  //       // },
+  //       // {
+  //       //   name: "Google Code-in Blog",
+  //       //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+  //       // }
+  //     ]
+  //   },
+  //   {
+  //     title: "Hackbattle Hackathon",
+  //     subtitle:
+  //       "Developed PillBox for Hackbattle Hackathon",
+  //     image: require("./assets/images/logo-white.png"),
+  //     imageAlt: "Pillbox",
+  //     footerLink: [
+  //       // {
+  //       //   name: "Certification",
+  //       //   url: "https://www.udemy.com/certificate/UC-29415bd1-adc0-434b-b9b3-b6b620755f89/"
+  //       // },
+  //       {
+  //         name: "Participation Certificate",
+  //         url: "https://drive.google.com/file/d/1h7V-ZoUkYGmjuw8rke-BMXOrLaXuuZQp/view?usp=sharing"
+  //       },
+  //       // {
+  //       //   name: "Google Code-in Blog",
+  //       //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+  //       // }
+  //     ]
+  //   },
 
-    // {
-    //   title: "PWA Web App Developer",
-    //   subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-    //   image: require("./assets/images/pwaLogo.webp"),
-    //   imageAlt: "PWA Logo",
-    //   footerLink: [
-    //     {name: "Certification", url: ""},
-    //     {
-    //       name: "Final Project",
-    //       url: "https://pakistan-olx-1.firebaseapp.com/"
-    //     }
-    //   ]
-    // }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  //   // {
+  //   //   title: "PWA Web App Developer",
+  //   //   subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+  //   //   image: require("./assets/images/pwaLogo.webp"),
+  //   //   imageAlt: "PWA Logo",
+  //   //   footerLink: [
+  //   //     {name: "Certification", url: ""},
+  //   //     {
+  //   //       name: "Final Project",
+  //   //       url: "https://pakistan-olx-1.firebaseapp.com/"
+  //   //     }
+  //   //   ]
+  //   // }
+  // ],
+  // display: true // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -415,6 +431,7 @@ export {
   techStack,
   workExperiences,
   openSource,
+  // Internships,
   bigProjects,
   achievementSection,
   blogSection,
