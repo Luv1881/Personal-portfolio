@@ -46,14 +46,14 @@ const skillsSection = {
   title: "What I do",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
-    emoji(
-      "⚡ Proficient in HTML, CSS, JavaScript, and popular frameworks."
-    ),
+    emoji("⚡ Proficient in HTML, CSS, JavaScript, and popular frameworks."),
     emoji(
       "⚡ Proficient in MongoDB, Express, React, and Node.js, delivering full-stack web solutions"
-    ),emoji(
+    ),
+    emoji(
       "⚡ Expertise in seamlessly integrating RESTful APIs for dynamic data-driven web applications"
-    ),emoji(
+    ),
+    emoji(
       "⚡ Craft pixel-perfect, responsive, and user-centric interfaces with modern design principles"
     )
   ],
@@ -125,7 +125,8 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "MongoDB",
       fontAwesomeClassname: "fa fa-leaf"
-    },{
+    },
+    {
       skillName: "Java",
       fontAwesomeClassname: "fab fa-java"
     }
@@ -143,7 +144,7 @@ const educationInfo = {
       logo: require("./assets/images/vellore-institute-of-technology-vit-logo.png"),
       subHeader: "Bachelor of Technology in Computer Science",
       duration: "September 2022-May 2026",
-      desc: "CGPA : 9.03",
+      desc: "CGPA : 9.03"
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -154,7 +155,7 @@ const educationInfo = {
       logo: require("./assets/images/LOGO.png"),
       subHeader: "11th & 12th",
       duration: "April 2022 - February 2022",
-      desc: "Percentage: 87%",
+      desc: "Percentage: 87%"
       // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     },
     {
@@ -162,7 +163,7 @@ const educationInfo = {
       logo: require("./assets/images/amity-international-school-logo-1.png"),
       subHeader: "Nursery - Grade 10",
       duration: "April 2008 - March 2020",
-      desc: "Percentage: 96.5%",
+      desc: "Percentage: 96.5%"
       // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
@@ -202,10 +203,10 @@ const workExperiences = {
       desc: "Worked on building high availability network architecture at DataWise",
       descBullets: [
         "Designed and proposed a high-availability, fault-tolerant network architecture, reducing downtime risk by 40%.",
-"Researched and evaluated 10+ enterprise-grade routers, firewalls, and redundancy protocols to identify scalable, cost-effective solutions.",
-"Delivered a production-ready architecture integrating HAProxy, Proxmox clusters, ZFS replication, and dual-ISP failover.",
+        "Researched and evaluated 10+ enterprise-grade routers, firewalls, and redundancy protocols to identify scalable, cost-effective solutions.",
+        "Delivered a production-ready architecture integrating HAProxy, Proxmox clusters, ZFS replication, and dual-ISP failover.",
 
-"Enhanced infrastructure performance, security, and reliability for future production deployment."
+        "Enhanced infrastructure performance, security, and reliability for future production deployment."
       ]
     },
     {
@@ -217,12 +218,12 @@ const workExperiences = {
       descBullets: [
         "Optimized AWS resources (EC2, S3, Lambda), improving performance and reducing costs by 15%.",
 
-"Automated 10+ cloud operations using AWS CLI, reducing manual workload and deployment time by 30%.",
+        "Automated 10+ cloud operations using AWS CLI, reducing manual workload and deployment time by 30%.",
 
-"Built and maintained CloudWatch dashboards and alerts across services, cutting incident response time.",
-"Improved system monitoring and diagnostics with proactive alerts and automated remediation."
+        "Built and maintained CloudWatch dashboards and alerts across services, cutting incident response time.",
+        "Improved system monitoring and diagnostics with proactive alerts and automated remediation."
       ]
-    }    
+    }
   ]
 };
 
@@ -243,7 +244,8 @@ const bigProjects = {
     {
       image: require("./assets/images/logo-white.png"),
       projectName: "PillBox",
-      projectDesc: "Built PillBox, a medication delivery system for the elderly, boosting accessibility by 30% with a NextJS frontend and Firebase-powered real-time data, authentication, and cloud storage.",
+      projectDesc:
+        "Built PillBox, a medication delivery system for the elderly, boosting accessibility by 30% with a NextJS frontend and Firebase-powered real-time data, authentication, and cloud storage.",
       footerLink: [
         {
           name: "Visit Github",
@@ -251,11 +253,12 @@ const bigProjects = {
         }
         //  you can add extra buttons here.
       ]
-    } ,
+    },
     {
       image: require("./assets/images/faqchatbot1.png"),
       projectName: "FAQ Chatbot",
-      projectDesc: "Intelligent FAQ system using BERT, TF-IDF, and NLTK, improving answer accuracy by 40% with sentiment analysis, contextual matching, and automated user interaction.",
+      projectDesc:
+        "Intelligent FAQ system using BERT, TF-IDF, and NLTK, improving answer accuracy by 40% with sentiment analysis, contextual matching, and automated user interaction.",
       footerLink: [
         {
           name: "Visit Github",
@@ -263,7 +266,7 @@ const bigProjects = {
         }
         //  you can add extra buttons here.
       ]
-    } 
+    }
     // {
     //   image: require("./assets/images/nextuLogo.webp"),
     //   projectName: "Nextu",
@@ -286,7 +289,6 @@ const achievementSection = {
   // title: emoji("Achievements And Certifications 🏆 "),
   // subtitle:
   //   "ASome Certifications that I have received",
-
   // achievementsCards: [
   //   {
   //     title: "The Complete 2023 Web Development Bootcamp",
@@ -330,7 +332,6 @@ const achievementSection = {
   //       // }
   //     ]
   //   },
-
   //   // {
   //   //   title: "PWA Web App Developer",
   //   //   subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
@@ -379,7 +380,6 @@ const talkSection = {
   // subtitle: emoji(
   //   "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
   // ),
-
   // talks: [
   //   {
   //     title: "Build Actions For Google Assistant",
@@ -396,7 +396,6 @@ const talkSection = {
 const podcastSection = {
   // title: emoji("Podcast 🎙️"),
   // subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
   // // Please Provide with Your Podcast embeded Link
   // podcast: [
   //   "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
