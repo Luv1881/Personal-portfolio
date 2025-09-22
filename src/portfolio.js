@@ -23,7 +23,7 @@ const greeting = {
   username: "Luv",
   title: "Hi all, I'm Luv",
   subTitle: emoji(
-    "A passionate MERN Stack Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks."
+    "Software developer skilled in full-stack (NextJS/React, Node/Flask), cloud (AWS, Firebase), and applied AI/ML (TensorFlow, scikit-learn, NLTK), building secure, scalable, data-driven systems with Java, Python, C++, and JavaScript."
   ),
   // resumeLink:  , // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
